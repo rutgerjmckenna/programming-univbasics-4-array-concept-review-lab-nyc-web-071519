@@ -1,9 +1,10 @@
 def find_element_index(array, value_to_find)
-  array.each_with_index |nums, index|
+  array.each_with_index do |nums, index|
    if array.include?(value_to_find)
     puts "#{index}"
    else
     puts "nil"
+  end
   end
 end
 
