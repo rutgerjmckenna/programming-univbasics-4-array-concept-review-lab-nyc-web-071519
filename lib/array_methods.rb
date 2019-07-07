@@ -1,7 +1,10 @@
 def find_element_index(array, value_to_find)
-  if array.include?(value_to_find)
-    puts array.index(value_to_find)
-  end
+  array.each_with_index |value_to_find, index|
+    if array.include?(value_to_find)
+      puts value_to_find.index
+    else
+      puts nil
+    end 
 end
 
 def find_max_value(array)
